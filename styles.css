@@ -1,14 +1,44 @@
 * {
     margin: 0;
-    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
     background-color: #111;
-}
-h1 {
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #f00;
+    border-radius: 15px;
+    background: url(house-card.jpg);
+    background-size: cover;
+}
+.card .content {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #232949;
+    border-radius: 15px;
+    border-top-left-radius: 0%;
+}
+.card .content .price {
+    position: absolute;
+    top: -80px;
 }
