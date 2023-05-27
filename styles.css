@@ -30,6 +30,30 @@ body {
     background: url(house-card.jpg);
     background-size: cover;
 }
+.card .imgBx::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+    
+}
+.card .imgBx::after {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -10px 10px 0 #fff;
+    
+}
 .card .content {
     position: relative;
     width: 100%;
