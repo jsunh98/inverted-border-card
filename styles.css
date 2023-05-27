@@ -25,11 +25,13 @@ body {
     position: relative;
     width: 100%;
     height: 240px;
-    background: #f00;
     border-radius: 15px;
-    background: url(house-card.jpg);
+    background: url(image/house-card.jpg);
     background-size: cover;
+   
+   
 }
+
 .card .imgBx::before {
     content: '';
     position: absolute;
@@ -61,10 +63,13 @@ body {
     background: #232949;
     border-radius: 15px;
     border-top-left-radius: 0;
+    padding: 0 35px;
+    color: #fff;
 }
 .card .content .price {
     position: absolute;
     top: -80px;
+    left: 0;
     height: 80px;
     width: 50%;
     background: #232949;
@@ -93,4 +98,15 @@ body {
     background: transparent;
     border-radius: 50%;
     box-shadow: -10px 10px 0 #232949;
+}
+.card .content .price a {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+    display: block;
+    border-radius: 7px;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
 }
